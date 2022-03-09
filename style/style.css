@@ -1,0 +1,158 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.sidebar {
+    margin-top: -3px;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+.content {
+    margin-top: 60px;
+    margin-left: 200px;
+    padding: 10px 16px;
+    height: 1000px;
+}
+
+.banner {
+    margin-top: 1px;
+}
+
+.banner img {
+    width: 100%;
+    height: 70vh;
+    opacity: 0.3;
+}
+
+.center {
+    font-size: 90px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center1 {
+    font-size: 35px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 1050px) {
+    .center1 {
+        font-size: 24px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .banner img {
+        width: 120%;
+        height: auto;
+    }
+
+    .center1 {
+        font-size: 20px;
+    }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+
+    .banner img {
+        width: 150%;
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+
+    .banner img {
+        width: 300%;
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+/* @media screen and (max-width: 600px) {
+    form{
+        margin:0%;
+    }
+    .col-25, .col-75, button[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    form{
+        margin:0%;
+    }
+    .col-25, .col-75, button[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  } */
